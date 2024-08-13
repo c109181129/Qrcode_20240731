@@ -1,0 +1,66 @@
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-color: #f0f2f5; /* Antd 預設背景色 */
+    padding: 20px; /* 添加一些內邊距以確保元素不緊貼瀏覽器邊緣 */
+  }
+  
+  .Content {
+    width: 100%;
+    max-width: 800px; /* 設定一個最大寬度以控制內容的最大寬度 */
+    background-color: #fff; /* 背景顏色設定為白色以提升可讀性 */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* 添加內邊距以確保內容不緊貼容器邊緣 */
+  }
+  
+  .breadcrumb-container {
+    width: 100%; /* 確保麵包屑容器佔滿寬度 */
+    margin-bottom: 16px; /* 確保麵包屑和新聞清單之間有足夠的間距 */
+    padding: 12px 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    display: block; /* 使用 block 以確保它佔據整行 */
+    align-items: center;
+  }
+  
+  .breadcrumb-label {
+    font-size: 14px;
+    margin-right: 8px;
+    color: #888;
+  }
+  
+  .ant-list-item {
+    padding: 16px 24px;
+    border-bottom: 1px solid #e8e8e8;
+    transition: background-color 0.3s;
+  }
+  
+  .ant-list-item:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .ant-list-item-meta-title a {
+    color: #1890ff; /* Antd 主題色 */
+    font-weight: 600;
+    transition: color 0.3s;
+    white-space: normal; /* 確保文字正常換行 */
+  }
+  
+  .ant-list-item-meta-title a:hover {
+    color: #40a9ff;
+  }
+  
+  .ant-list-item-meta-description {
+    color: #666;
+    white-space: normal; /* 確保文字正常換行 */
+  }
+  
+  .ant-list-item-meta {
+    flex: 1; /* 讓元數據區域可擴展 */
+    min-width: 0; /* 確保文本可以換行 */
+  }
+  

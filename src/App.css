@@ -1,17 +1,24 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+
+  /* pointer-events: none; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
 .App-header {
   background-color: #282c34;
@@ -32,7 +39,136 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.Header {
+
+  display: flex;
+  align-items: 'center';
+  justify-content: center;
+  text-align: 'center';
+  gap: 10px;
+  background-color: #ffd9e6;
+
+  margin: 0;
+  padding: 0;
+
+}
+
+.Header-background {
+  /* display: flex;
+  align-items: 'center';
+  justify-content: center;
+  text-align: 'center'; */
+  background-color: #ffd9e6;
+}
+
+.Content {
+
+  display: flex;
+  align-items: 'center';
+  justify-content: center;
+  text-align: 'center';
+  background-color: #ffffff;
+}
+
+.Content-about {
+
+  display: flex;
+  align-items: 'center';
+  justify-content: center;
+  text-align: 'center';
+  background-color: #ffffff;
+  flex-direction: column;
+  /* 垂直排列子元素 */
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.Footer {
+
+  display: flex;
+  align-items: 'center';
+  justify-content: center;
+  text-align: 'center';
+  background-color: #ffd9e6;
+}
+
+.breadcrumb-container {
+  display: flex;
+  align-items: center;
+  /* 垂直居中 */
+  margin: 16px;
+  background-color: #ffffff;
+  font-weight: bold;
+}
+
+.breadcrumb-label {
+  margin-right: 8px;
+  /* 添加間距以分隔文本和麵包屑 */
+  font-weight: bold;
+  /* 使文本更加突出 */
+}
+
+
+/* App.css */
+.breadcrumb-container {
+  margin-bottom: 20px;
+  /* 添加一些底部間距 */
+}
+
+.cake-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px;
+  /* 卡片之間的間距 */
+}
+
+.cake-card {
+  flex: 1 1 calc(25% - 16px);
+  /* 每行四個卡片，減去間距 */
+  box-sizing: border-box;
+  /* 確保 padding 不會影響寬度 */
+  margin-bottom: 16px;
+  /* 卡片之間的垂直間距 */
+}
+
+.cake-card img {
+  height: 200px;
+  /* 固定圖片高度以一致 */
+  object-fit: cover;
+  /* 確保圖片不會變形 */
+}
+
+.Content-cake {
+  padding: 16px;
+  /* 添加內邊距以使內容不緊貼邊框 */
+  background-color: #f5f5f5;
+  /* 添加背景顏色以突出顯示內容 */
+}
+
+.ant-list-item {
+  padding: 16px 24px;
+  border-bottom: 1px solid #e8e8e8;
+  transition: background-color 0.3s;
+}
+
+.ant-list-item-meta-title a {
+  color: #1890ff;
+  /* Antd 主題色 */
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.ant-list-item-meta {
+  flex: 1;
+  /* 讓元數據區域可擴展 */
+  min-width: 0;
+  /* 確保文本可以換行 */
 }
